@@ -1,0 +1,14 @@
+ul{
+    list-style: none;
+    
+}
+li{
+    display: inline-block;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/meta') %>
+    <title>
+        <%# This is the way to add comments in EJS templates %>
+        <%# the below title variable is coming from the server and below syntax is ejs syntax to add it here %>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- By defult the files will be searched in public folder as we have declared this folder using static middleware in express app-->
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <%= heading %>
+        </h1>
+    </div>
+    <%- include('../partials/nav.ejs')%>
+    <div class="container">
+        
+
+        <a href="/download">Download file</a>
+    </div>
+    <script src="/util.js"></script>
+</body>
+
+</html>
